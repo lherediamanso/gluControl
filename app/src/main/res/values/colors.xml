@@ -3,4 +3,21 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!--  Paleta de Colores App  -->
+    <color name="primary">#009688</color>
+    <color name="primary_50">#E0F2F1</color>
+    <color name="primary_100">#B2DFDB</color>
+    <color name="primary_200">#80CBC4</color>
+    <color name="primary_300">#4DB6AC</color>
+    <color name="primary_400">#26A69A</color>
+    <color name="primary_500">#009688</color>
+    <color name="primary_600">#00897B</color>
+    <color name="primary_700">#00796B</color>
+    <color name="primary_800">#00695C</color>
+    <color name="primary_900">#004D40</color>
+
+    <color name="primary_A100">#A7FFEB</color>
+    <color name="primary_A200">#64FFDA</color>
+    <color name="primary_A400">#1DE9B6</color>
+    <color name="primary_A700">#00BFA5</color>
 </resources>
