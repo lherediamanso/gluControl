@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">gluControl</string>
+    <string name="app_text_descripcion">Control de azúcar en sangre</string>
+
+    <string name="app_button_registrar">Registrar</string>
+
+    <string name="app_inputregistro_hint">Escribe tu nombre</string>
+
     <string name="title_activity_home">HomeActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
