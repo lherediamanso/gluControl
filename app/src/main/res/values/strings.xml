@@ -6,6 +6,8 @@
 
     <string name="app_inputregistro_hint">Escribe tu nombre</string>
 
+    <string name="app_title_controlazucar">Controles realizados</string>
+
     <string name="title_activity_home">HomeActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>

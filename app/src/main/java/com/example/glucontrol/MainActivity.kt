@@ -16,13 +16,17 @@ class MainActivity : AppCompatActivity() {
 
         //Creo base datos SQLite para guardar registros localmente
         val myDB = openOrCreateDatabase("glucontrol.db", MODE_PRIVATE, null)
-        //creo tablas necesarias
+        //creo tablas necesarias user (usuario que se registra) y control (registra fecha y valor de la toma de azucar)
         myDB.execSQL(
             "CREATE TABLE IF NOT EXISTS user (name VARCHAR(200))"
         );
         myDB.execSQL(
             "CREATE TABLE IF NOT EXISTS control (fecha VARCHAR(200), valor INTEGER)"
         );
+        //Elimina los datos de los controles realizados
+//        myDB.execSQL(
+//            "DELETE from control"
+//        );
         //Realizo consulta para saber si ya esta registrado
         val myCursor = myDB.rawQuery("select name from user", null)
         var name:String = ""
@@ -53,6 +57,7 @@ class MainActivity : AppCompatActivity() {
             myDB.insert("user", null, row1);
 
             val intent = Intent(this, HomeActivity::class.java)
+            //mecanismo para pasar directamente el dato del nombre registrado a la pantalla home
             intent.putExtra("nombreRegistro", edtTexto.text.toString())
             startActivity(intent)
         }
